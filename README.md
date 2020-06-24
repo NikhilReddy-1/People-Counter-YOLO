@@ -9,3 +9,7 @@ Displays the number of people in a frame using YOLO
   https://pjreddie.com/media/files/yolov3.weights
   
   Download and place these weights inside 'yolov3-coco/'
+  
+# Output
+
+![Output](https://github.com/NikhilReddy-1/People-Counter-YOLO/blob/master/Output.png)
