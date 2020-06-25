@@ -23,7 +23,8 @@ def draw_labels_and_boxes(img, boxes, confidences, classids, idxs, colors, label
             color = [int(c) for c in colors[classids[i]]]
 
             # Draw the bounding box rectangle and label on the image
-            number = len(idxs)
+            if(labels[classids[i]] == 'person'):
+                number = len(idxs)
             counter = "Number of People in Frame:{}".format(number)
             cv.rectangle(img, (x, y), (x+w, y+h), color, 2)
             cv.putText(img,counter, (10,50), cv.FONT_HERSHEY_SIMPLEX, 1, (255,255,255) , 3)
